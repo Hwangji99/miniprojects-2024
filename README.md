@@ -84,10 +84,28 @@ IoT 개발자 미니 프로젝트 리포지토리
     - [x] 라즈베리파이 카메라
     - [x] GPIO HAT
     - [x] 브레드보드와 연결
-    - [] DHT11 센서
+    - [x] DHT11 센서
     - [x] RGB LED 모듈
         - V - 5V 연결
         - R - GPI04 연결
         - B - GPI05 연결
         - G - GPI06 연결
-    - [] 서보모터
+    - [x] 서보모터
+
+## 5일차(2024-05-21)
+- 라즈베리파이 IoT장비 설치
+    [x] DHT11(온습도) 센서
+        - GND - GND 8개 중 아무데나 연결
+        - VCC - 5V 연결
+        - S - GPIO18 연결
+
+- 라즈베리파이 마우스 속도 높이기
+    - sudo nano /boot/firmware/cmdline.txt
+    - 끝에 usbhid.mousepsuoll=0
+    - reboot
+
+- 라즈베리파이 무선랜 연결
+    - nano /etc/wpa_supplicant/wpa_supplicant.conf
+    - nano /etc/rc.loacl
+    - sudo iw config wlan0 power off # wifi 연결이 끊기지 않음
+    - reboot
