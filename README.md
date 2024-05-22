@@ -109,3 +109,9 @@ IoT 개발자 미니 프로젝트 리포지토리
     - nano /etc/rc.loacl
     - sudo iw config wlan0 power off # wifi 연결이 끊기지 않음
     - reboot
+
+## 6일차(2024-05-22)
+- 네트워크 대
+    - 개인 공유기
+
+    - vncserver-x11 > RealVNC Server
