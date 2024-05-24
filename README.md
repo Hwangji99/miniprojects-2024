@@ -137,3 +137,6 @@ IoT 개발자 미니 프로젝트 리포지토리
         - 방화벽 인바운드 열기
     - RPi : paho-mqtt 패키지 설치, 송신(publisher)
     - Win : MQTT.NET Nuget 패키지 설치, 수신(subscriber)
+
+## 8일차(2024-05-24)
+- 
