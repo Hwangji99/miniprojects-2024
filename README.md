@@ -74,7 +74,7 @@ IoT 개발자 미니 프로젝트 리포지토리
         - [x] Pi Apps 앱설치 도우미 앱
         - [x] Github Desktop, VS Code
         - [x] 네트워크 확인
-            - RealVNC Server 자동실행 설정
+        - [ ] RealVNC Server 자동실행 설정
 
 - 스마트홈 연동 클래스 미니 프로젝트
     - RPi 셋팅 및 진행
@@ -84,17 +84,17 @@ IoT 개발자 미니 프로젝트 리포지토리
     - [x] 라즈베리파이 카메라
     - [x] GPIO HAT
     - [x] 브레드보드와 연결
-    - [x] DHT11 센서
+    - [ ] DHT11 센서
     - [x] RGB LED 모듈
         - V - 5V 연결
         - R - GPI04 연결
         - B - GPI05 연결
         - G - GPI06 연결
-    - [x] 서보모터
+    - [ ] 서보모터
 
 ## 5일차(2024-05-21)
 - 라즈베리파이 IoT장비 설치
-    [x] DHT11(온습도) 센서
+    - [x] DHT11(온습도) 센서
         - GND - GND 8개 중 아무데나 연결
         - VCC - 5V 연결
         - S - GPIO18 연결
@@ -135,8 +135,18 @@ IoT 개발자 미니 프로젝트 리포지토리
     - [x] Mosquitto Broker 설치
         - mosquitto.conf > notepad++로 열기 > listner 1888 0.0.0.0,  allow_anonymous true
         - 방화벽 인바운드 열기
-    - RPi : paho-mqtt 패키지 설치, 송신(publisher)
-    - Win : MQTT.NET Nuget 패키지 설치, 수신(subscriber)
+    - [x] RPi : paho-mqtt 패키지 설치, 송신(publisher)
+    - [ ] Win/C# : MQTT.NET Nuget 패키지 설치, 수신(subscriber)
+        - M2Mqtt : 가볍게 쓸 수 있음, 업데이트가 안됨
+        - MQTTNet : MS에서 개발, 무겁다, 최신까지 업데이트 잘 됨
 
 ## 8일차(2024-05-24)
-- 
+- MQTT화 통신
+    - 라즈베리파이에서 얻은 온습도 정보를 MQTT를 통해 컴퓨터로 가져오기
+
+## 9일차(2024-05-27)
+- 스마트홈 연동 클래스 미니프로젝트
+    - [ ] WPF MQTT 데이터 DB로 저장
+    - [ ] MQTT 데이터 실시간 모니터링
+    - [ ] MQTT로 RPi 제어(LED제어)
+    - [ ] WPF MQTT 데이터 히스토리 확인

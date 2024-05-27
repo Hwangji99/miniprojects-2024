@@ -59,6 +59,8 @@ namespace SmartHomeMonitoringApp
 
         private void MnuDataBaseMon_Click(object sender, RoutedEventArgs e)
         {
+            ActiveItem.Content = new Views.DataBaseControl();
+            StsSelScreen.Content = "데이터베이스 모니터링";
         }
 
         private void MnuRealTimeMon_Click(object sender, RoutedEventArgs e)
@@ -73,5 +75,9 @@ namespace SmartHomeMonitoringApp
         {
         }
 
+        private void MnuVisualzationMon_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
