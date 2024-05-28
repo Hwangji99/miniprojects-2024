@@ -3,6 +3,7 @@ using LiveChartsCore.SkiaSharpView;
 using LiveChartsCore.SkiaSharpView.VisualElements;
 using LiveChartsCore.VisualElements;
 using OxyPlot;
+using OxyPlot.Legends;
 using OxyPlot.Series;
 using SmartHomeMonitoringApp.Logics;
 using System;
@@ -70,6 +71,13 @@ namespace SmartHomeMonitoringApp.Views
 
             // OxyPlot 데이터 처리
             var tmp = new PlotModel { Title = "SmartHome Visualization", DefaultFont = "NanumGothic" };
+            var legend = new Legend
+            {
+                LegendBorder = OxyColors.DarkGray,
+                LegendBackground = OxyColor.FromArgb(150, 255, 255, 255),
+                LegendPosition = LegendPosition.TopRight,
+                LegendPlacement = LegendPlacement.Outside,
+            };
 
             var tempSeries = new LineSeries
             {
